@@ -67,8 +67,6 @@ Partial Class FrmHetalia
         Me.picChibItaly = New System.Windows.Forms.PictureBox()
         Me.picHRE = New System.Windows.Forms.PictureBox()
         Me.btnGoP1 = New System.Windows.Forms.Button()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.txtFind = New System.Windows.Forms.TextBox()
         Me.picMain = New System.Windows.Forms.PictureBox()
         CType(Me.picAmerica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picAntRome, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,20 +116,21 @@ Partial Class FrmHetalia
         'lstHetaliaChara
         '
         Me.lstHetaliaChara.FormattingEnabled = True
+        Me.lstHetaliaChara.ItemHeight = 16
         Me.lstHetaliaChara.Items.AddRange(New Object() {"America", "Ancient Rome", "Austria", "Belarus", "Belgium", "Canada", "Chibitalia", "China", "Cuba", "Denmark", "England", "Estonia", "Finland", "France", "Germania", "Germany", "Greece", "Holy Roman Empire", "Hong Kong", "Hungary", "Iceland", "Japan", "Latvia", "Liechtenstein", "Lithuania", "Netherland", "North Italy", "Norway", "Poland", "Prussia", "Romania", "Russia", "Sealand", "South Italy", "South Korea", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", "Chibi Romano"})
-        Me.lstHetaliaChara.Location = New System.Drawing.Point(16, 19)
-        Me.lstHetaliaChara.Margin = New System.Windows.Forms.Padding(2)
+        Me.lstHetaliaChara.Location = New System.Drawing.Point(21, 23)
+        Me.lstHetaliaChara.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.lstHetaliaChara.Name = "lstHetaliaChara"
-        Me.lstHetaliaChara.Size = New System.Drawing.Size(187, 225)
+        Me.lstHetaliaChara.Size = New System.Drawing.Size(248, 276)
         Me.lstHetaliaChara.TabIndex = 0
         '
         'picAmerica
         '
         Me.picAmerica.Image = CType(resources.GetObject("picAmerica.Image"), System.Drawing.Image)
-        Me.picAmerica.Location = New System.Drawing.Point(64, 33)
-        Me.picAmerica.Margin = New System.Windows.Forms.Padding(2)
+        Me.picAmerica.Location = New System.Drawing.Point(85, 41)
+        Me.picAmerica.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picAmerica.Name = "picAmerica"
-        Me.picAmerica.Size = New System.Drawing.Size(153, 231)
+        Me.picAmerica.Size = New System.Drawing.Size(204, 284)
         Me.picAmerica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAmerica.TabIndex = 1
         Me.picAmerica.TabStop = False
@@ -140,10 +139,10 @@ Partial Class FrmHetalia
         'picAntRome
         '
         Me.picAntRome.Image = CType(resources.GetObject("picAntRome.Image"), System.Drawing.Image)
-        Me.picAntRome.Location = New System.Drawing.Point(132, 18)
-        Me.picAntRome.Margin = New System.Windows.Forms.Padding(2)
+        Me.picAntRome.Location = New System.Drawing.Point(176, 22)
+        Me.picAntRome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picAntRome.Name = "picAntRome"
-        Me.picAntRome.Size = New System.Drawing.Size(142, 231)
+        Me.picAntRome.Size = New System.Drawing.Size(189, 284)
         Me.picAntRome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAntRome.TabIndex = 2
         Me.picAntRome.TabStop = False
@@ -152,10 +151,10 @@ Partial Class FrmHetalia
         'picUkraine
         '
         Me.picUkraine.Image = CType(resources.GetObject("picUkraine.Image"), System.Drawing.Image)
-        Me.picUkraine.Location = New System.Drawing.Point(99, 17)
-        Me.picUkraine.Margin = New System.Windows.Forms.Padding(2)
+        Me.picUkraine.Location = New System.Drawing.Point(132, 21)
+        Me.picUkraine.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picUkraine.Name = "picUkraine"
-        Me.picUkraine.Size = New System.Drawing.Size(153, 231)
+        Me.picUkraine.Size = New System.Drawing.Size(204, 284)
         Me.picUkraine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picUkraine.TabIndex = 3
         Me.picUkraine.TabStop = False
@@ -164,10 +163,10 @@ Partial Class FrmHetalia
         'picTurkey
         '
         Me.picTurkey.Image = CType(resources.GetObject("picTurkey.Image"), System.Drawing.Image)
-        Me.picTurkey.Location = New System.Drawing.Point(72, 38)
-        Me.picTurkey.Margin = New System.Windows.Forms.Padding(2)
+        Me.picTurkey.Location = New System.Drawing.Point(96, 47)
+        Me.picTurkey.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picTurkey.Name = "picTurkey"
-        Me.picTurkey.Size = New System.Drawing.Size(170, 231)
+        Me.picTurkey.Size = New System.Drawing.Size(227, 284)
         Me.picTurkey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picTurkey.TabIndex = 4
         Me.picTurkey.TabStop = False
@@ -176,10 +175,10 @@ Partial Class FrmHetalia
         'picSwiss
         '
         Me.picSwiss.Image = CType(resources.GetObject("picSwiss.Image"), System.Drawing.Image)
-        Me.picSwiss.Location = New System.Drawing.Point(64, 36)
-        Me.picSwiss.Margin = New System.Windows.Forms.Padding(2)
+        Me.picSwiss.Location = New System.Drawing.Point(85, 44)
+        Me.picSwiss.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picSwiss.Name = "picSwiss"
-        Me.picSwiss.Size = New System.Drawing.Size(131, 207)
+        Me.picSwiss.Size = New System.Drawing.Size(175, 255)
         Me.picSwiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSwiss.TabIndex = 5
         Me.picSwiss.TabStop = False
@@ -188,10 +187,10 @@ Partial Class FrmHetalia
         'picSweden
         '
         Me.picSweden.Image = CType(resources.GetObject("picSweden.Image"), System.Drawing.Image)
-        Me.picSweden.Location = New System.Drawing.Point(50, 24)
-        Me.picSweden.Margin = New System.Windows.Forms.Padding(2)
+        Me.picSweden.Location = New System.Drawing.Point(67, 30)
+        Me.picSweden.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picSweden.Name = "picSweden"
-        Me.picSweden.Size = New System.Drawing.Size(122, 232)
+        Me.picSweden.Size = New System.Drawing.Size(163, 286)
         Me.picSweden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSweden.TabIndex = 6
         Me.picSweden.TabStop = False
@@ -200,10 +199,10 @@ Partial Class FrmHetalia
         'picSpain
         '
         Me.picSpain.Image = CType(resources.GetObject("picSpain.Image"), System.Drawing.Image)
-        Me.picSpain.Location = New System.Drawing.Point(50, 20)
-        Me.picSpain.Margin = New System.Windows.Forms.Padding(2)
+        Me.picSpain.Location = New System.Drawing.Point(67, 25)
+        Me.picSpain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picSpain.Name = "picSpain"
-        Me.picSpain.Size = New System.Drawing.Size(153, 231)
+        Me.picSpain.Size = New System.Drawing.Size(204, 284)
         Me.picSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSpain.TabIndex = 7
         Me.picSpain.TabStop = False
@@ -212,10 +211,10 @@ Partial Class FrmHetalia
         'picS_Italy
         '
         Me.picS_Italy.Image = CType(resources.GetObject("picS_Italy.Image"), System.Drawing.Image)
-        Me.picS_Italy.Location = New System.Drawing.Point(71, 15)
-        Me.picS_Italy.Margin = New System.Windows.Forms.Padding(2)
+        Me.picS_Italy.Location = New System.Drawing.Point(95, 18)
+        Me.picS_Italy.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picS_Italy.Name = "picS_Italy"
-        Me.picS_Italy.Size = New System.Drawing.Size(131, 232)
+        Me.picS_Italy.Size = New System.Drawing.Size(175, 286)
         Me.picS_Italy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picS_Italy.TabIndex = 8
         Me.picS_Italy.TabStop = False
@@ -224,10 +223,10 @@ Partial Class FrmHetalia
         'picSealand
         '
         Me.picSealand.Image = CType(resources.GetObject("picSealand.Image"), System.Drawing.Image)
-        Me.picSealand.Location = New System.Drawing.Point(74, 19)
-        Me.picSealand.Margin = New System.Windows.Forms.Padding(2)
+        Me.picSealand.Location = New System.Drawing.Point(99, 23)
+        Me.picSealand.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picSealand.Name = "picSealand"
-        Me.picSealand.Size = New System.Drawing.Size(138, 231)
+        Me.picSealand.Size = New System.Drawing.Size(184, 284)
         Me.picSealand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSealand.TabIndex = 9
         Me.picSealand.TabStop = False
@@ -236,10 +235,10 @@ Partial Class FrmHetalia
         'picRussia
         '
         Me.picRussia.Image = CType(resources.GetObject("picRussia.Image"), System.Drawing.Image)
-        Me.picRussia.Location = New System.Drawing.Point(30, 36)
-        Me.picRussia.Margin = New System.Windows.Forms.Padding(2)
+        Me.picRussia.Location = New System.Drawing.Point(40, 44)
+        Me.picRussia.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picRussia.Name = "picRussia"
-        Me.picRussia.Size = New System.Drawing.Size(153, 233)
+        Me.picRussia.Size = New System.Drawing.Size(204, 287)
         Me.picRussia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRussia.TabIndex = 10
         Me.picRussia.TabStop = False
@@ -248,10 +247,10 @@ Partial Class FrmHetalia
         'picKorea
         '
         Me.picKorea.Image = CType(resources.GetObject("picKorea.Image"), System.Drawing.Image)
-        Me.picKorea.Location = New System.Drawing.Point(99, 20)
-        Me.picKorea.Margin = New System.Windows.Forms.Padding(2)
+        Me.picKorea.Location = New System.Drawing.Point(132, 25)
+        Me.picKorea.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picKorea.Name = "picKorea"
-        Me.picKorea.Size = New System.Drawing.Size(153, 231)
+        Me.picKorea.Size = New System.Drawing.Size(204, 284)
         Me.picKorea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picKorea.TabIndex = 11
         Me.picKorea.TabStop = False
@@ -260,10 +259,10 @@ Partial Class FrmHetalia
         'picJapan
         '
         Me.picJapan.Image = CType(resources.GetObject("picJapan.Image"), System.Drawing.Image)
-        Me.picJapan.Location = New System.Drawing.Point(49, 27)
-        Me.picJapan.Margin = New System.Windows.Forms.Padding(2)
+        Me.picJapan.Location = New System.Drawing.Point(65, 33)
+        Me.picJapan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picJapan.Name = "picJapan"
-        Me.picJapan.Size = New System.Drawing.Size(153, 231)
+        Me.picJapan.Size = New System.Drawing.Size(204, 284)
         Me.picJapan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picJapan.TabIndex = 12
         Me.picJapan.TabStop = False
@@ -272,10 +271,10 @@ Partial Class FrmHetalia
         'picN_Italy
         '
         Me.picN_Italy.Image = CType(resources.GetObject("picN_Italy.Image"), System.Drawing.Image)
-        Me.picN_Italy.Location = New System.Drawing.Point(49, 26)
-        Me.picN_Italy.Margin = New System.Windows.Forms.Padding(2)
+        Me.picN_Italy.Location = New System.Drawing.Point(65, 32)
+        Me.picN_Italy.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picN_Italy.Name = "picN_Italy"
-        Me.picN_Italy.Size = New System.Drawing.Size(153, 231)
+        Me.picN_Italy.Size = New System.Drawing.Size(204, 284)
         Me.picN_Italy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picN_Italy.TabIndex = 13
         Me.picN_Italy.TabStop = False
@@ -284,10 +283,10 @@ Partial Class FrmHetalia
         'picHongKong
         '
         Me.picHongKong.Image = CType(resources.GetObject("picHongKong.Image"), System.Drawing.Image)
-        Me.picHongKong.Location = New System.Drawing.Point(89, 24)
-        Me.picHongKong.Margin = New System.Windows.Forms.Padding(2)
+        Me.picHongKong.Location = New System.Drawing.Point(119, 30)
+        Me.picHongKong.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picHongKong.Name = "picHongKong"
-        Me.picHongKong.Size = New System.Drawing.Size(153, 231)
+        Me.picHongKong.Size = New System.Drawing.Size(204, 284)
         Me.picHongKong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picHongKong.TabIndex = 14
         Me.picHongKong.TabStop = False
@@ -296,10 +295,10 @@ Partial Class FrmHetalia
         'picGermany
         '
         Me.picGermany.Image = CType(resources.GetObject("picGermany.Image"), System.Drawing.Image)
-        Me.picGermany.Location = New System.Drawing.Point(89, 24)
-        Me.picGermany.Margin = New System.Windows.Forms.Padding(2)
+        Me.picGermany.Location = New System.Drawing.Point(119, 30)
+        Me.picGermany.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picGermany.Name = "picGermany"
-        Me.picGermany.Size = New System.Drawing.Size(153, 231)
+        Me.picGermany.Size = New System.Drawing.Size(204, 284)
         Me.picGermany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picGermany.TabIndex = 15
         Me.picGermany.TabStop = False
@@ -308,10 +307,10 @@ Partial Class FrmHetalia
         'picFrance
         '
         Me.picFrance.Image = CType(resources.GetObject("picFrance.Image"), System.Drawing.Image)
-        Me.picFrance.Location = New System.Drawing.Point(64, 18)
-        Me.picFrance.Margin = New System.Windows.Forms.Padding(2)
+        Me.picFrance.Location = New System.Drawing.Point(85, 22)
+        Me.picFrance.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picFrance.Name = "picFrance"
-        Me.picFrance.Size = New System.Drawing.Size(153, 231)
+        Me.picFrance.Size = New System.Drawing.Size(204, 284)
         Me.picFrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picFrance.TabIndex = 16
         Me.picFrance.TabStop = False
@@ -320,10 +319,10 @@ Partial Class FrmHetalia
         'picEngland
         '
         Me.picEngland.Image = CType(resources.GetObject("picEngland.Image"), System.Drawing.Image)
-        Me.picEngland.Location = New System.Drawing.Point(30, 34)
-        Me.picEngland.Margin = New System.Windows.Forms.Padding(2)
+        Me.picEngland.Location = New System.Drawing.Point(40, 42)
+        Me.picEngland.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picEngland.Name = "picEngland"
-        Me.picEngland.Size = New System.Drawing.Size(153, 231)
+        Me.picEngland.Size = New System.Drawing.Size(204, 284)
         Me.picEngland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picEngland.TabIndex = 17
         Me.picEngland.TabStop = False
@@ -332,10 +331,10 @@ Partial Class FrmHetalia
         'picChina
         '
         Me.picChina.Image = CType(resources.GetObject("picChina.Image"), System.Drawing.Image)
-        Me.picChina.Location = New System.Drawing.Point(115, 22)
-        Me.picChina.Margin = New System.Windows.Forms.Padding(2)
+        Me.picChina.Location = New System.Drawing.Point(153, 27)
+        Me.picChina.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picChina.Name = "picChina"
-        Me.picChina.Size = New System.Drawing.Size(153, 231)
+        Me.picChina.Size = New System.Drawing.Size(204, 284)
         Me.picChina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picChina.TabIndex = 18
         Me.picChina.TabStop = False
@@ -344,10 +343,10 @@ Partial Class FrmHetalia
         'picCanada
         '
         Me.picCanada.Image = CType(resources.GetObject("picCanada.Image"), System.Drawing.Image)
-        Me.picCanada.Location = New System.Drawing.Point(33, 38)
-        Me.picCanada.Margin = New System.Windows.Forms.Padding(2)
+        Me.picCanada.Location = New System.Drawing.Point(44, 47)
+        Me.picCanada.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picCanada.Name = "picCanada"
-        Me.picCanada.Size = New System.Drawing.Size(153, 231)
+        Me.picCanada.Size = New System.Drawing.Size(204, 284)
         Me.picCanada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picCanada.TabIndex = 19
         Me.picCanada.TabStop = False
@@ -356,10 +355,10 @@ Partial Class FrmHetalia
         'picLiech
         '
         Me.picLiech.Image = CType(resources.GetObject("picLiech.Image"), System.Drawing.Image)
-        Me.picLiech.Location = New System.Drawing.Point(89, 18)
-        Me.picLiech.Margin = New System.Windows.Forms.Padding(2)
+        Me.picLiech.Location = New System.Drawing.Point(119, 22)
+        Me.picLiech.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picLiech.Name = "picLiech"
-        Me.picLiech.Size = New System.Drawing.Size(153, 231)
+        Me.picLiech.Size = New System.Drawing.Size(204, 284)
         Me.picLiech.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLiech.TabIndex = 20
         Me.picLiech.TabStop = False
@@ -368,10 +367,10 @@ Partial Class FrmHetalia
         'picLatvia
         '
         Me.picLatvia.Image = CType(resources.GetObject("picLatvia.Image"), System.Drawing.Image)
-        Me.picLatvia.Location = New System.Drawing.Point(49, 23)
-        Me.picLatvia.Margin = New System.Windows.Forms.Padding(2)
+        Me.picLatvia.Location = New System.Drawing.Point(65, 28)
+        Me.picLatvia.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picLatvia.Name = "picLatvia"
-        Me.picLatvia.Size = New System.Drawing.Size(134, 235)
+        Me.picLatvia.Size = New System.Drawing.Size(179, 289)
         Me.picLatvia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLatvia.TabIndex = 21
         Me.picLatvia.TabStop = False
@@ -380,10 +379,10 @@ Partial Class FrmHetalia
         'picBelarus
         '
         Me.picBelarus.Image = CType(resources.GetObject("picBelarus.Image"), System.Drawing.Image)
-        Me.picBelarus.Location = New System.Drawing.Point(74, 17)
-        Me.picBelarus.Margin = New System.Windows.Forms.Padding(2)
+        Me.picBelarus.Location = New System.Drawing.Point(99, 21)
+        Me.picBelarus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picBelarus.Name = "picBelarus"
-        Me.picBelarus.Size = New System.Drawing.Size(153, 231)
+        Me.picBelarus.Size = New System.Drawing.Size(204, 284)
         Me.picBelarus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBelarus.TabIndex = 22
         Me.picBelarus.TabStop = False
@@ -392,10 +391,10 @@ Partial Class FrmHetalia
         'picLithuania
         '
         Me.picLithuania.Image = CType(resources.GetObject("picLithuania.Image"), System.Drawing.Image)
-        Me.picLithuania.Location = New System.Drawing.Point(30, 27)
-        Me.picLithuania.Margin = New System.Windows.Forms.Padding(2)
+        Me.picLithuania.Location = New System.Drawing.Point(40, 33)
+        Me.picLithuania.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picLithuania.Name = "picLithuania"
-        Me.picLithuania.Size = New System.Drawing.Size(142, 231)
+        Me.picLithuania.Size = New System.Drawing.Size(189, 284)
         Me.picLithuania.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLithuania.TabIndex = 23
         Me.picLithuania.TabStop = False
@@ -404,10 +403,10 @@ Partial Class FrmHetalia
         'picPoland
         '
         Me.picPoland.Image = CType(resources.GetObject("picPoland.Image"), System.Drawing.Image)
-        Me.picPoland.Location = New System.Drawing.Point(89, 22)
-        Me.picPoland.Margin = New System.Windows.Forms.Padding(2)
+        Me.picPoland.Location = New System.Drawing.Point(119, 27)
+        Me.picPoland.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picPoland.Name = "picPoland"
-        Me.picPoland.Size = New System.Drawing.Size(153, 231)
+        Me.picPoland.Size = New System.Drawing.Size(204, 284)
         Me.picPoland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPoland.TabIndex = 24
         Me.picPoland.TabStop = False
@@ -416,10 +415,10 @@ Partial Class FrmHetalia
         'picPrussia
         '
         Me.picPrussia.Image = CType(resources.GetObject("picPrussia.Image"), System.Drawing.Image)
-        Me.picPrussia.Location = New System.Drawing.Point(49, 26)
-        Me.picPrussia.Margin = New System.Windows.Forms.Padding(2)
+        Me.picPrussia.Location = New System.Drawing.Point(65, 32)
+        Me.picPrussia.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picPrussia.Name = "picPrussia"
-        Me.picPrussia.Size = New System.Drawing.Size(108, 231)
+        Me.picPrussia.Size = New System.Drawing.Size(144, 284)
         Me.picPrussia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPrussia.TabIndex = 25
         Me.picPrussia.TabStop = False
@@ -428,10 +427,10 @@ Partial Class FrmHetalia
         'picNorway
         '
         Me.picNorway.Image = CType(resources.GetObject("picNorway.Image"), System.Drawing.Image)
-        Me.picNorway.Location = New System.Drawing.Point(64, 30)
-        Me.picNorway.Margin = New System.Windows.Forms.Padding(2)
+        Me.picNorway.Location = New System.Drawing.Point(85, 37)
+        Me.picNorway.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picNorway.Name = "picNorway"
-        Me.picNorway.Size = New System.Drawing.Size(108, 223)
+        Me.picNorway.Size = New System.Drawing.Size(144, 274)
         Me.picNorway.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picNorway.TabIndex = 26
         Me.picNorway.TabStop = False
@@ -440,10 +439,10 @@ Partial Class FrmHetalia
         'picDenmark
         '
         Me.picDenmark.Image = CType(resources.GetObject("picDenmark.Image"), System.Drawing.Image)
-        Me.picDenmark.Location = New System.Drawing.Point(64, 33)
-        Me.picDenmark.Margin = New System.Windows.Forms.Padding(2)
+        Me.picDenmark.Location = New System.Drawing.Point(85, 41)
+        Me.picDenmark.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picDenmark.Name = "picDenmark"
-        Me.picDenmark.Size = New System.Drawing.Size(122, 232)
+        Me.picDenmark.Size = New System.Drawing.Size(163, 286)
         Me.picDenmark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picDenmark.TabIndex = 27
         Me.picDenmark.TabStop = False
@@ -452,10 +451,10 @@ Partial Class FrmHetalia
         'picEstonia
         '
         Me.picEstonia.Image = CType(resources.GetObject("picEstonia.Image"), System.Drawing.Image)
-        Me.picEstonia.Location = New System.Drawing.Point(50, 16)
-        Me.picEstonia.Margin = New System.Windows.Forms.Padding(2)
+        Me.picEstonia.Location = New System.Drawing.Point(67, 20)
+        Me.picEstonia.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picEstonia.Name = "picEstonia"
-        Me.picEstonia.Size = New System.Drawing.Size(122, 232)
+        Me.picEstonia.Size = New System.Drawing.Size(163, 286)
         Me.picEstonia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picEstonia.TabIndex = 28
         Me.picEstonia.TabStop = False
@@ -464,10 +463,10 @@ Partial Class FrmHetalia
         'picHungary
         '
         Me.picHungary.Image = CType(resources.GetObject("picHungary.Image"), System.Drawing.Image)
-        Me.picHungary.Location = New System.Drawing.Point(49, 19)
-        Me.picHungary.Margin = New System.Windows.Forms.Padding(2)
+        Me.picHungary.Location = New System.Drawing.Point(65, 23)
+        Me.picHungary.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picHungary.Name = "picHungary"
-        Me.picHungary.Size = New System.Drawing.Size(178, 222)
+        Me.picHungary.Size = New System.Drawing.Size(237, 273)
         Me.picHungary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picHungary.TabIndex = 29
         Me.picHungary.TabStop = False
@@ -476,10 +475,10 @@ Partial Class FrmHetalia
         'picGreece
         '
         Me.picGreece.Image = CType(resources.GetObject("picGreece.Image"), System.Drawing.Image)
-        Me.picGreece.Location = New System.Drawing.Point(112, 34)
-        Me.picGreece.Margin = New System.Windows.Forms.Padding(2)
+        Me.picGreece.Location = New System.Drawing.Point(149, 42)
+        Me.picGreece.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picGreece.Name = "picGreece"
-        Me.picGreece.Size = New System.Drawing.Size(156, 216)
+        Me.picGreece.Size = New System.Drawing.Size(208, 266)
         Me.picGreece.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picGreece.TabIndex = 30
         Me.picGreece.TabStop = False
@@ -488,10 +487,10 @@ Partial Class FrmHetalia
         'picFinland
         '
         Me.picFinland.Image = CType(resources.GetObject("picFinland.Image"), System.Drawing.Image)
-        Me.picFinland.Location = New System.Drawing.Point(82, 37)
-        Me.picFinland.Margin = New System.Windows.Forms.Padding(2)
+        Me.picFinland.Location = New System.Drawing.Point(109, 46)
+        Me.picFinland.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picFinland.Name = "picFinland"
-        Me.picFinland.Size = New System.Drawing.Size(130, 232)
+        Me.picFinland.Size = New System.Drawing.Size(173, 286)
         Me.picFinland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picFinland.TabIndex = 31
         Me.picFinland.TabStop = False
@@ -500,10 +499,10 @@ Partial Class FrmHetalia
         'picGermania
         '
         Me.picGermania.Image = CType(resources.GetObject("picGermania.Image"), System.Drawing.Image)
-        Me.picGermania.Location = New System.Drawing.Point(0, 44)
-        Me.picGermania.Margin = New System.Windows.Forms.Padding(2)
+        Me.picGermania.Location = New System.Drawing.Point(0, 54)
+        Me.picGermania.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picGermania.Name = "picGermania"
-        Me.picGermania.Size = New System.Drawing.Size(128, 225)
+        Me.picGermania.Size = New System.Drawing.Size(171, 277)
         Me.picGermania.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picGermania.TabIndex = 32
         Me.picGermania.TabStop = False
@@ -512,10 +511,10 @@ Partial Class FrmHetalia
         'picIceland
         '
         Me.picIceland.Image = CType(resources.GetObject("picIceland.Image"), System.Drawing.Image)
-        Me.picIceland.Location = New System.Drawing.Point(130, 19)
-        Me.picIceland.Margin = New System.Windows.Forms.Padding(2)
+        Me.picIceland.Location = New System.Drawing.Point(173, 23)
+        Me.picIceland.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picIceland.Name = "picIceland"
-        Me.picIceland.Size = New System.Drawing.Size(122, 232)
+        Me.picIceland.Size = New System.Drawing.Size(163, 286)
         Me.picIceland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picIceland.TabIndex = 33
         Me.picIceland.TabStop = False
@@ -524,10 +523,10 @@ Partial Class FrmHetalia
         'picRomania
         '
         Me.picRomania.Image = CType(resources.GetObject("picRomania.Image"), System.Drawing.Image)
-        Me.picRomania.Location = New System.Drawing.Point(46, 24)
-        Me.picRomania.Margin = New System.Windows.Forms.Padding(2)
+        Me.picRomania.Location = New System.Drawing.Point(61, 30)
+        Me.picRomania.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picRomania.Name = "picRomania"
-        Me.picRomania.Size = New System.Drawing.Size(206, 242)
+        Me.picRomania.Size = New System.Drawing.Size(275, 298)
         Me.picRomania.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRomania.TabIndex = 34
         Me.picRomania.TabStop = False
@@ -576,20 +575,21 @@ Partial Class FrmHetalia
         Me.GroupBox1.Controls.Add(Me.picNorway)
         Me.GroupBox1.Controls.Add(Me.picPrussia)
         Me.GroupBox1.Controls.Add(Me.picHungary)
-        Me.GroupBox1.Location = New System.Drawing.Point(656, 114)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Location = New System.Drawing.Point(875, 140)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(227, 261)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(303, 321)
         Me.GroupBox1.TabIndex = 35
         Me.GroupBox1.TabStop = False
         '
         'picChibiRomano
         '
         Me.picChibiRomano.Image = Global.Anime_Game.My.Resources.Resources.Chibi_Romano
-        Me.picChibiRomano.Location = New System.Drawing.Point(46, 32)
+        Me.picChibiRomano.Location = New System.Drawing.Point(61, 39)
+        Me.picChibiRomano.Margin = New System.Windows.Forms.Padding(4)
         Me.picChibiRomano.Name = "picChibiRomano"
-        Me.picChibiRomano.Size = New System.Drawing.Size(149, 225)
+        Me.picChibiRomano.Size = New System.Drawing.Size(199, 277)
         Me.picChibiRomano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picChibiRomano.TabIndex = 42
         Me.picChibiRomano.TabStop = False
@@ -597,10 +597,10 @@ Partial Class FrmHetalia
         'picAustria
         '
         Me.picAustria.Image = CType(resources.GetObject("picAustria.Image"), System.Drawing.Image)
-        Me.picAustria.Location = New System.Drawing.Point(46, 19)
-        Me.picAustria.Margin = New System.Windows.Forms.Padding(2)
+        Me.picAustria.Location = New System.Drawing.Point(61, 23)
+        Me.picAustria.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picAustria.Name = "picAustria"
-        Me.picAustria.Size = New System.Drawing.Size(141, 232)
+        Me.picAustria.Size = New System.Drawing.Size(188, 286)
         Me.picAustria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAustria.TabIndex = 41
         Me.picAustria.TabStop = False
@@ -609,10 +609,10 @@ Partial Class FrmHetalia
         'picBelgium
         '
         Me.picBelgium.Image = CType(resources.GetObject("picBelgium.Image"), System.Drawing.Image)
-        Me.picBelgium.Location = New System.Drawing.Point(33, 18)
-        Me.picBelgium.Margin = New System.Windows.Forms.Padding(2)
+        Me.picBelgium.Location = New System.Drawing.Point(44, 22)
+        Me.picBelgium.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picBelgium.Name = "picBelgium"
-        Me.picBelgium.Size = New System.Drawing.Size(129, 232)
+        Me.picBelgium.Size = New System.Drawing.Size(172, 286)
         Me.picBelgium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBelgium.TabIndex = 38
         Me.picBelgium.TabStop = False
@@ -621,10 +621,10 @@ Partial Class FrmHetalia
         'picNetherland
         '
         Me.picNetherland.Image = CType(resources.GetObject("picNetherland.Image"), System.Drawing.Image)
-        Me.picNetherland.Location = New System.Drawing.Point(46, 26)
-        Me.picNetherland.Margin = New System.Windows.Forms.Padding(2)
+        Me.picNetherland.Location = New System.Drawing.Point(61, 32)
+        Me.picNetherland.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picNetherland.Name = "picNetherland"
-        Me.picNetherland.Size = New System.Drawing.Size(122, 232)
+        Me.picNetherland.Size = New System.Drawing.Size(163, 286)
         Me.picNetherland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picNetherland.TabIndex = 40
         Me.picNetherland.TabStop = False
@@ -633,10 +633,10 @@ Partial Class FrmHetalia
         'picCuba
         '
         Me.picCuba.Image = CType(resources.GetObject("picCuba.Image"), System.Drawing.Image)
-        Me.picCuba.Location = New System.Drawing.Point(117, 43)
-        Me.picCuba.Margin = New System.Windows.Forms.Padding(2)
+        Me.picCuba.Location = New System.Drawing.Point(156, 53)
+        Me.picCuba.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picCuba.Name = "picCuba"
-        Me.picCuba.Size = New System.Drawing.Size(110, 212)
+        Me.picCuba.Size = New System.Drawing.Size(147, 261)
         Me.picCuba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picCuba.TabIndex = 39
         Me.picCuba.TabStop = False
@@ -645,10 +645,10 @@ Partial Class FrmHetalia
         'picChibItaly
         '
         Me.picChibItaly.Image = CType(resources.GetObject("picChibItaly.Image"), System.Drawing.Image)
-        Me.picChibItaly.Location = New System.Drawing.Point(50, 26)
-        Me.picChibItaly.Margin = New System.Windows.Forms.Padding(2)
+        Me.picChibItaly.Location = New System.Drawing.Point(67, 32)
+        Me.picChibItaly.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picChibItaly.Name = "picChibItaly"
-        Me.picChibItaly.Size = New System.Drawing.Size(122, 232)
+        Me.picChibItaly.Size = New System.Drawing.Size(163, 286)
         Me.picChibItaly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picChibItaly.TabIndex = 36
         Me.picChibItaly.TabStop = False
@@ -657,10 +657,10 @@ Partial Class FrmHetalia
         'picHRE
         '
         Me.picHRE.Image = CType(resources.GetObject("picHRE.Image"), System.Drawing.Image)
-        Me.picHRE.Location = New System.Drawing.Point(37, 19)
-        Me.picHRE.Margin = New System.Windows.Forms.Padding(2)
+        Me.picHRE.Location = New System.Drawing.Point(49, 23)
+        Me.picHRE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picHRE.Name = "picHRE"
-        Me.picHRE.Size = New System.Drawing.Size(190, 232)
+        Me.picHRE.Size = New System.Drawing.Size(253, 286)
         Me.picHRE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picHRE.TabIndex = 37
         Me.picHRE.TabStop = False
@@ -668,52 +668,33 @@ Partial Class FrmHetalia
         '
         'btnGoP1
         '
-        Me.btnGoP1.Location = New System.Drawing.Point(356, 302)
-        Me.btnGoP1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnGoP1.Location = New System.Drawing.Point(475, 372)
+        Me.btnGoP1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnGoP1.Name = "btnGoP1"
-        Me.btnGoP1.Size = New System.Drawing.Size(100, 28)
+        Me.btnGoP1.Size = New System.Drawing.Size(133, 34)
         Me.btnGoP1.TabIndex = 36
         Me.btnGoP1.Text = "Pick"
         Me.btnGoP1.UseVisualStyleBackColor = True
         '
-        'btnSearch
-        '
-        Me.btnSearch.Location = New System.Drawing.Point(206, 302)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(100, 28)
-        Me.btnSearch.TabIndex = 38
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = True
-        '
-        'txtFind
-        '
-        Me.txtFind.Location = New System.Drawing.Point(34, 302)
-        Me.txtFind.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtFind.Name = "txtFind"
-        Me.txtFind.Size = New System.Drawing.Size(140, 20)
-        Me.txtFind.TabIndex = 39
-        '
         'picMain
         '
-        Me.picMain.Location = New System.Drawing.Point(244, 19)
+        Me.picMain.Location = New System.Drawing.Point(325, 23)
+        Me.picMain.Margin = New System.Windows.Forms.Padding(4)
         Me.picMain.Name = "picMain"
-        Me.picMain.Size = New System.Drawing.Size(152, 209)
+        Me.picMain.Size = New System.Drawing.Size(203, 257)
         Me.picMain.TabIndex = 41
         Me.picMain.TabStop = False
         '
         'FrmHetalia
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(479, 344)
+        Me.ClientSize = New System.Drawing.Size(639, 423)
         Me.Controls.Add(Me.picMain)
-        Me.Controls.Add(Me.txtFind)
-        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnGoP1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lstHetaliaChara)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmHetalia"
         Me.Text = "FrmHetalia"
         CType(Me.picAmerica, System.ComponentModel.ISupportInitialize).EndInit()
@@ -760,7 +741,6 @@ Partial Class FrmHetalia
         CType(Me.picHRE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -807,8 +787,6 @@ Partial Class FrmHetalia
     Friend WithEvents picNetherland As PictureBox
     Friend WithEvents picAustria As PictureBox
     Friend WithEvents btnGoP1 As Button
-    Friend WithEvents btnSearch As Button
-    Friend WithEvents txtFind As TextBox
     Friend WithEvents picMain As PictureBox
     Friend WithEvents picChibiRomano As PictureBox
 End Class

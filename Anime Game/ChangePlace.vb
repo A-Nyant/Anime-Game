@@ -14,19 +14,16 @@
     End Sub
 
     Public Sub Buttons(Item As Object, anime As Form)
+        Turn = FrmActualGame.intk
 
-        FrmActualGame.GetTurn(Turn)
-        Debug.Print(Turn)
         If Turn = 1 Then
-            Turn = 0
             FrmActualGame.lstP2_Chara_Idle.Items.Add(Item)
             gamePlay(anime, FrmActualGame.lstP2_Chara_Idle, FrmActualGame.lstP2_Chara_Dist, FrmActualGame.lstP1_Chara_Idle, FrmActualGame.lstP1_Chara_Dist, 1)
         ElseIf Turn = 0 Then
-            Turn = 1
             FrmActualGame.lstP1_Chara_Idle.Items.Add(Item)
             gamePlay(anime, FrmActualGame.lstP1_Chara_Idle, FrmActualGame.lstP1_Chara_Dist, FrmActualGame.lstP2_Chara_Idle, FrmActualGame.lstP2_Chara_Dist, 2)
         End If
-        FrmActualGame.ChangeTurn(Turn)
+        FrmActualGame.Players_Turn()
         Debug.Print(Turn)
     End Sub
     Public Sub gamePlay(anime As Form, Now_Idle As Object, Now_Dist As Object, Opp_Idle As Object, Opp_Dist As Object, Optional ByRef num As Integer = 0)
@@ -36,9 +33,7 @@
             frmDGM.GamePlay(Now_Idle, Now_Dist, Opp_Idle, Opp_Dist, num)
         End If
     End Sub
-    'Public Sub start(num)
-    'Turn = Num
-    'End Sub
+
 
     Public Sub Team_Check(now_idle As Object, now_dist As Object, num_Chara As Integer, num_player As Integer, characters() As String)
         Dim count As Integer
