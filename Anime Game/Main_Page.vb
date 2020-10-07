@@ -1,5 +1,6 @@
 ﻿Public Class frmMainP1
 
+    'This page is the starting page. The players will give their names and then move to the next form
 
     'button to get the ball rolling
     Private Sub btnDoneP1_Click(sender As Object, e As EventArgs) Handles btnDoneP1.Click

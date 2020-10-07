@@ -6,15 +6,23 @@
     Public player1_idle As Object = FrmActualGame.lstP1_Chara_Idle : Public player1_dist As Object = FrmActualGame.lstP1_Chara_Dist
     Public player2_idle As Object = FrmActualGame.lstP2_Chara_Idle : Public player2_dist As Object = FrmActualGame.lstP2_Chara_Dist
 
+    'When the player clicks on a name, the character's picture will show up.
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstHetaliaChara.SelectedIndexChanged
         showChara()
     End Sub
 
-
+    'When the player picks the character, it sets up some events.
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGoP1.Click
+        'hides the form if there are still characters.
         Me.Hide()
+
+        'Calls a method in ChangePlace class to handle the moving of characters.
         This.Buttons(lstHetaliaChara.SelectedItem, Me)
-        'lstHetaliaChara.Items.Remove(lstHetaliaChara.SelectedItem)
+
+        'Removes the character from the list
+        lstHetaliaChara.Items.Remove(lstHetaliaChara.SelectedItem)
+
+        'If there are no characters in the listbox, then the form will close and the tab for the show will disappear.
         If lstHetaliaChara.Items.Count = 0 Then
             FrmActualGame.mnuHetalia.Visible = False
             If FrmActualGame.mnuHetalia.Visible = False And FrmActualGame.mnuHigurashi.Visible = False And FrmActualGame.mnuHitmanReborn.Visible = False And FrmActualGame.mnuHunterxHunter.Visible = False Then
@@ -24,13 +32,17 @@
         End If
     End Sub
 
-
+    'puts the characters into an array.
     Private Sub FrmHetalia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For K = 0 To CharaList.Length - 1
             CharaList(K) = lstHetaliaChara.Items(K)
         Next
     End Sub
 
+    'Gameplay for when the characters are picked.
+    'Now_idle is the current player's listbox for their idle characters, while Now_dist is the listbox for their distracted characters.
+    'Opp_idle is the other's listbox for their idle character while opp_num is the listbox for their distracted characters.
+    'num is ???????????????
     Public Sub GamePlay(Now_idle As Object, Now_Dist As Object, Opp_Idle As Object, Opp_Dist As Object, num As Integer)
         Select Case lstHetaliaChara.SelectedItem
             Case CharaList(0) 'America
@@ -287,30 +299,30 @@
                     End Select
 
 
-                    Case CharaList(22) 'Lativa
-                    If Opp_Idle.Items.Contains(CharaList(31)) Or Opp_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
-                        This.add(Opp_Dist, Now_idle, CharaList(22)) 'Lativa
-                    ElseIf Now_idle.Items.Contains(CharaList(31)) Or Now_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
-                        This.add(Now_Dist, Now_idle, CharaList(22)) 'Lativa
-                    End If
+            Case CharaList(22) 'Lativa
+                If Opp_Idle.Items.Contains(CharaList(31)) Or Opp_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
+                    This.add(Opp_Dist, Now_idle, CharaList(22)) 'Lativa
+                ElseIf Now_idle.Items.Contains(CharaList(31)) Or Now_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
+                    This.add(Now_Dist, Now_idle, CharaList(22)) 'Lativa
+                End If
 
 
-                    Case CharaList(23) 'liech is picked
-                    If Opp_Idle.Items.Contains(CharaList(37)) Then 'player 2 has swiss
-                        This.add(Opp_Idle, Now_idle, CharaList(23))
-                    End If
+            Case CharaList(23) 'liech is picked
+                If Opp_Idle.Items.Contains(CharaList(37)) Then 'player 2 has swiss
+                    This.add(Opp_Idle, Now_idle, CharaList(23))
+                End If
 
 
-                    Case CharaList(24) 'Lithunia
-                    If Opp_Idle.Items.Contains(CharaList(31)) Or Opp_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
-                        This.add(Opp_Dist, Now_idle, CharaList(24)) 'Lithunia
-                    ElseIf Now_idle.Items.Contains(CharaList(31)) Or Now_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
-                        This.add(Now_Dist, Now_idle, CharaList(24)) 'Lithunia
+            Case CharaList(24) 'Lithunia
+                If Opp_Idle.Items.Contains(CharaList(31)) Or Opp_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
+                    This.add(Opp_Dist, Now_idle, CharaList(24)) 'Lithunia
+                ElseIf Now_idle.Items.Contains(CharaList(31)) Or Now_Dist.Items.Contains(CharaList(31)) Then 'player 2 has Russia
+                    This.add(Now_Dist, Now_idle, CharaList(24)) 'Lithunia
                     Else
-                        If Opp_Idle.Items.Contains(CharaList(28)) Then 'p2 has chara Poland
-                            This.add(Now_idle, Opp_Idle, CharaList(28))
-                        End If
+                    If Opp_Idle.Items.Contains(CharaList(28)) Then 'p2 has chara Poland
+                        This.add(Now_idle, Opp_Idle, CharaList(28))
                     End If
+                End If
 
 
             Case CharaList(25) 'They picked netherland
@@ -319,46 +331,46 @@
                 End If
 
 
-                    Case (CharaList(26)) 'Has North Italy
-                    If Opp_Idle.Items.Contains(CharaList(15)) Then 'p2 has chara North Italy
-                        This.add(Opp_Idle, Now_idle, CharaList(26))
-                    End If
+            Case (CharaList(26)) 'Has North Italy
+                If Opp_Idle.Items.Contains(CharaList(15)) Then 'p2 has chara North Italy
+                    This.add(Opp_Idle, Now_idle, CharaList(26))
+                End If
 
 
 
-                    Case (CharaList(28)) 'Has Poland
-                    If Opp_Idle.Items.Contains(CharaList(24)) Or Opp_Dist.Items.Contains(CharaList(24)) Then 'p2 has Lithunia
-                        This.add(Opp_Idle, Now_idle, CharaList(28)) 'Poland moves
-                    End If
+            Case (CharaList(28)) 'Has Poland
+                If Opp_Idle.Items.Contains(CharaList(24)) Or Opp_Dist.Items.Contains(CharaList(24)) Then 'p2 has Lithunia
+                    This.add(Opp_Idle, Now_idle, CharaList(28)) 'Poland moves
+                End If
 
-                    Case (CharaList(29)) 'Has Prussia
-                    If Now_idle.Items.Contains(CharaList(19)) Then 'p1 has Hungary
-                        This.add_2C_1D(Now_idle, Now_idle, Now_Dist, CharaList(29), CharaList(19)) 'Hungary and Prussia moves
-                    ElseIf Opp_Idle.Items.Contains(CharaList(19)) Then 'p2 has Hungary
-                        This.add_2C_1D(Now_idle, Opp_Idle, Now_Dist, CharaList(29), CharaList(19)) 'Hungary and Prussia moves
-                    ElseIf Now_idle.Items.Contains(CharaList(2)) Then 'p1 has Austria
-                        This.add_2C_1D(Now_idle, Now_idle, Now_Dist, CharaList(29), CharaList(2)) 'Austria and Prussia moves
-                    ElseIf Opp_Idle.Items.Contains(CharaList(2)) Then 'p2 has Austria
-                        This.add_2C_1D(Now_idle, Opp_Idle, Now_Dist, CharaList(29), CharaList(2)) 'Austria and Prussia moves
-                    End If
+            Case (CharaList(29)) 'Has Prussia
+                If Now_idle.Items.Contains(CharaList(19)) Then 'p1 has Hungary
+                    This.add_2C_1D(Now_idle, Now_idle, Now_Dist, CharaList(29), CharaList(19)) 'Hungary and Prussia moves
+                ElseIf Opp_Idle.Items.Contains(CharaList(19)) Then 'p2 has Hungary
+                    This.add_2C_1D(Now_idle, Opp_Idle, Now_Dist, CharaList(29), CharaList(19)) 'Hungary and Prussia moves
+                ElseIf Now_idle.Items.Contains(CharaList(2)) Then 'p1 has Austria
+                    This.add_2C_1D(Now_idle, Now_idle, Now_Dist, CharaList(29), CharaList(2)) 'Austria and Prussia moves
+                ElseIf Opp_Idle.Items.Contains(CharaList(2)) Then 'p2 has Austria
+                    This.add_2C_1D(Now_idle, Opp_Idle, Now_Dist, CharaList(29), CharaList(2)) 'Austria and Prussia moves
+                End If
 
-                    Case CharaList(31) 'Russia
-                    If Opp_Idle.Items.Contains(CharaList(11)) Then 'player 2 has Estonia
-                        This.add(Now_Dist, Opp_Idle, CharaList(11)) 'Estonia moves
-                    ElseIf Now_idle.Items.Contains(CharaList(11)) Then 'player 2 has Estonia
-                        This.add(Now_Dist, Now_idle, CharaList(11)) 'Estonia moves 
-                    End If
+            Case CharaList(31) 'Russia
+                If Opp_Idle.Items.Contains(CharaList(11)) Then 'player 2 has Estonia
+                    This.add(Now_Dist, Opp_Idle, CharaList(11)) 'Estonia moves
+                ElseIf Now_idle.Items.Contains(CharaList(11)) Then 'player 2 has Estonia
+                    This.add(Now_Dist, Now_idle, CharaList(11)) 'Estonia moves 
+                End If
 
-                    If Opp_Idle.Items.Contains(CharaList(22)) Then 'player 2 has Lativa
-                        This.add(Now_Dist, Opp_Idle, CharaList(22)) 'Lativa moves
-                    ElseIf Now_idle.Items.Contains(CharaList(22)) Then 'player 2 has Lativa
-                        This.add(Now_Dist, Now_idle, CharaList(22)) 'Lativa moves
-                    End If
+                If Opp_Idle.Items.Contains(CharaList(22)) Then 'player 2 has Lativa
+                    This.add(Now_Dist, Opp_Idle, CharaList(22)) 'Lativa moves
+                ElseIf Now_idle.Items.Contains(CharaList(22)) Then 'player 2 has Lativa
+                    This.add(Now_Dist, Now_idle, CharaList(22)) 'Lativa moves
+                End If
 
-                    If Opp_Idle.Items.Contains(CharaList(24)) Then 'player 2 has Lithunia
-                        This.add(Now_Dist, Opp_Idle, CharaList(24)) 'Lithunia moves
-                    ElseIf Now_idle.Items.Contains(CharaList(24)) Then 'player 2 has Lithunia
-                        This.add(Now_Dist, Now_idle, CharaList(24)) 'Lithunia moves
+                If Opp_Idle.Items.Contains(CharaList(24)) Then 'player 2 has Lithunia
+                    This.add(Now_Dist, Opp_Idle, CharaList(24)) 'Lithunia moves
+                ElseIf Now_idle.Items.Contains(CharaList(24)) Then 'player 2 has Lithunia
+                    This.add(Now_Dist, Now_idle, CharaList(24)) 'Lithunia moves
                     End If
 
                 If Now_idle.Items.Contains(CharaList(3)) Then 'p1 has Belarus

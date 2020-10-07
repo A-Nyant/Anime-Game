@@ -79,17 +79,17 @@
     <Compile Include="DGM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Main_Page.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Main_Page.Designer.vb">
+      <DependentUpon>Main_Page.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="PickingShows.Designer.vb">
+      <DependentUpon>PickingShows.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="PickingShows.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmActualGame.Designer.vb">
@@ -130,11 +130,11 @@
     <EmbeddedResource Include="DGM.resx">
       <DependentUpon>DGM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Main_Page.resx">
+      <DependentUpon>Main_Page.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="PickingShows.resx">
+      <DependentUpon>PickingShows.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmActualGame.resx">
       <DependentUpon>FrmActualGame.vb</DependentUpon>
