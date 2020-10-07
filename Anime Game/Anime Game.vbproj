@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D5356AA-0678-4667-B2BD-3CA7F9560729}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Anime_Game.My.MyApplication</StartupObject>
+    <RootNamespace>Anime_Game</RootNamespace>
+    <AssemblyName>Anime Game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Anime Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Anime Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePlace.vb" />
+    <Compile Include="DGM.Designer.vb">
+      <DependentUpon>DGM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DGM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualGame.Designer.vb">
+      <DependentUpon>FrmActualGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBNHA.Designer.vb">
+      <DependentUpon>FrmBNHA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBNHA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHetalia.Designer.vb">
+      <DependentUpon>FrmHetalia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHetalia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DGM.resx">
+      <DependentUpon>DGM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualGame.resx">
+      <DependentUpon>FrmActualGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBNHA.resx">
+      <DependentUpon>FrmBNHA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHetalia.resx">
+      <DependentUpon>FrmHetalia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chibi Romano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Allen Walker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Apocryphos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Bak Chan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Bookman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Cross.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Devit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Earl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Heart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Jasdero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Kanda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Komui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Krory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Lavi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Lenalee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Link.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Malcolm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Mana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Miranda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Nea D. Campbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Skin Bolic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Timcanpy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anime Pictures\D.Gray Man\Tyki.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
